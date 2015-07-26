@@ -1,6 +1,6 @@
 #TODOS
 ## updated at 7/26/2015
-* design of products
+* design of products `doing`
 * functions analys
 
 ##Tint
