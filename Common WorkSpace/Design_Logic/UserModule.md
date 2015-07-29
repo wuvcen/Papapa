@@ -19,8 +19,10 @@ edit by wangzhilong110 at 2015/7/28
 **followee**:`default`  
 **status**:`default`  
 **private status**:`default`    
+**reserves**:`AVRelation`  
 
-###see more at [LeanCloud](http://leancloud.com)
+
+###see more at [LeanCloud](http://leancloud.cn)
 
 
 
