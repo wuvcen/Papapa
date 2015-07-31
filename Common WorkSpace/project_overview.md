@@ -15,7 +15,8 @@
 * **Function Lab**  
 	1.Warriors' Todo List  
 	2.Help my PC(LBS)  
-	3.EPUB Reader    
+	3.EPUB Reader     
+* **CMS** 
 	
 ##Design Outline
 * **Visual**  
