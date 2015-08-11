@@ -8,21 +8,20 @@
 
 #import "UserInfoViewController.h"
 #import "AvatarTableViewCell.h"
-
+#import <AVOSCloud/AVOSCloud.h>
 @interface UserInfoViewController ()
 
 @end
 
-static NSString *reuserID = @"avatar";
+static NSString *reuserID = @"userInfo";
 @implementation UserInfoViewController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"AvatarCell" bundle:nil] forCellReuseIdentifier:reuserID];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self.navigationController.navigationBar setTranslucent:NO];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -51,11 +50,22 @@ static NSString *reuserID = @"avatar";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AvatarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID forIndexPath:indexPath];
+    AvatarTableViewCell *avatarCell = [tableView dequeueReusableCellWithIdentifier:reuserID forIndexPath:indexPath];
+    AVUser *currentUser = [AVUser currentUser];
+    if (currentUser != nil) {
+        avatarCell.nameLabel.text = currentUser.username;
+        avatarCell.accountLabel.text = currentUser.email;
+    }
+    switch (indexPath.section) {
+        case 0:
+            return avatarCell;
+        default:
+            break;
+    }
     
-    // Configure the cell...
     
-    return cell;
+    
+    return nil;
 }
 
 /*

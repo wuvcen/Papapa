@@ -10,5 +10,7 @@
 
 @interface AvatarTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImg;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *accountLabel;
 
 @end

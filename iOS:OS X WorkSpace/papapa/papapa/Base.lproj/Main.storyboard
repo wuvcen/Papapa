@@ -2,26 +2,86 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F6a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ya2-K8-c0d">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--我-->
         <scene sceneID="geA-bI-GCg">
             <objects>
                 <tableViewController id="1Ad-Sl-s14" customClass="UserInfoViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="kb3-Rk-FDc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="95" sectionHeaderHeight="10" sectionFooterHeight="10" id="kb3-Rk-FDc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userInfo" rowHeight="95" id="znX-gm-Xs3" customClass="AvatarTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="znX-gm-Xs3" id="P2r-pb-wzz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boys" translatesAutoresizingMaskIntoConstraints="NO" id="wjX-ZM-NLj">
+                                            <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="6l1-el-tCZ"/>
+                                                <constraint firstAttribute="width" constant="80" id="9JO-c1-kuK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-Kv-NIB">
+                                            <rect key="frame" x="579" y="36" width="13" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="uOZ-wI-4h5"/>
+                                                <constraint firstAttribute="width" constant="13" id="zwS-Ix-HF1"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轻按此处以登陆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-0C-OA8">
+                                            <rect key="frame" x="106" y="58" width="465" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="08I-zy-Dpt"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZe-31-aN3">
+                                            <rect key="frame" x="104" y="8" width="467" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="lXi-gy-JK7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wjX-ZM-NLj" firstAttribute="leading" secondItem="P2r-pb-wzz" secondAttribute="leadingMargin" id="1PA-oL-aGd"/>
+                                        <constraint firstItem="Xod-Kv-NIB" firstAttribute="leading" secondItem="aFz-0C-OA8" secondAttribute="trailing" constant="8" id="HSq-7w-cyw"/>
+                                        <constraint firstItem="wjX-ZM-NLj" firstAttribute="top" secondItem="P2r-pb-wzz" secondAttribute="topMargin" id="Jnv-Ww-cUS"/>
+                                        <constraint firstItem="aFz-0C-OA8" firstAttribute="top" secondItem="lZe-31-aN3" secondAttribute="bottom" id="Le0-0h-972"/>
+                                        <constraint firstItem="lZe-31-aN3" firstAttribute="leading" secondItem="wjX-ZM-NLj" secondAttribute="trailing" constant="16" id="Uen-Le-EsS"/>
+                                        <constraint firstItem="aFz-0C-OA8" firstAttribute="leading" secondItem="wjX-ZM-NLj" secondAttribute="trailing" constant="18" id="X5E-TZ-8Rf"/>
+                                        <constraint firstItem="Xod-Kv-NIB" firstAttribute="trailing" secondItem="P2r-pb-wzz" secondAttribute="trailingMargin" id="asz-lL-9eC"/>
+                                        <constraint firstItem="lZe-31-aN3" firstAttribute="top" secondItem="P2r-pb-wzz" secondAttribute="topMargin" id="eA6-42-C8e"/>
+                                        <constraint firstAttribute="centerY" secondItem="Xod-Kv-NIB" secondAttribute="centerY" id="rWa-8i-AcQ"/>
+                                        <constraint firstItem="Xod-Kv-NIB" firstAttribute="leading" secondItem="lZe-31-aN3" secondAttribute="trailing" constant="8" id="ueR-kn-g83"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="accountLabel" destination="aFz-0C-OA8" id="TUZ-Ko-eqT"/>
+                                    <outlet property="avatarImg" destination="wjX-ZM-NLj" id="Lef-zP-6Ph"/>
+                                    <outlet property="nameLabel" destination="lZe-31-aN3" id="22a-fl-Bkp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="1Ad-Sl-s14" id="srO-C5-Jj3"/>
                             <outlet property="delegate" destination="1Ad-Sl-s14" id="Fa5-yl-yRI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="qCs-Fn-BsJ"/>
+                    <navigationItem key="navigationItem" title="我" id="BEO-iq-kJw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xb0-vg-kpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="363"/>
+            <point key="canvasLocation" x="2038" y="363"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="32D-La-Jbd">
@@ -34,12 +94,36 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1Ad-Sl-s14" kind="relationship" relationship="viewControllers" id="7lw-1u-JNh"/>
+                        <segue destination="Ow4-Nq-WNZ" kind="relationship" relationship="viewControllers" id="7lw-1u-JNh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcx-PM-fcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="414" y="363"/>
         </scene>
+        <!--我-->
+        <scene sceneID="ugG-Qy-oDu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ow4-Nq-WNZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" id="qCs-Fn-BsJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qBL-RE-QZP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ad-Sl-s14" kind="relationship" relationship="rootViewController" id="vPX-xn-esh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xI-xV-q13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="363"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="boys" width="100" height="100"/>
+        <image name="forward" width="26" height="44"/>
+    </resources>
 </document>
