@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13D7F3C1-BF15-46E3-9F1F-4EE1E3F51CFD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>papapa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7F1B13AF76B7CF7E1CDA7933BEDAC469EC7B917</key>
+		<string>https://github.com/wangzhilong110/Papapa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS:OS X WorkSpace/papapa/papapa.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7F1B13AF76B7CF7E1CDA7933BEDAC469EC7B917</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wangzhilong110/Papapa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7F1B13AF76B7CF7E1CDA7933BEDAC469EC7B917</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7F1B13AF76B7CF7E1CDA7933BEDAC469EC7B917</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Papapa</string>
+		</dict>
+	</array>
+</dict>
+</plist>
