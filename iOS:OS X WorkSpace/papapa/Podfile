@@ -1,1 +1,2 @@
 pod 'AVOSCloud'
+pod 'FDFullscreenPopGesture', '1.1'

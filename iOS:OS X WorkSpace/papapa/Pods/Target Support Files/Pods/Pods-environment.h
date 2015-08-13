@@ -13,3 +13,9 @@
 // Please contact the author.
 // Version: 3.1.2.6.
 
+// FDFullscreenPopGesture
+#define COCOAPODS_POD_AVAILABLE_FDFullscreenPopGesture
+#define COCOAPODS_VERSION_MAJOR_FDFullscreenPopGesture 1
+#define COCOAPODS_VERSION_MINOR_FDFullscreenPopGesture 1
+#define COCOAPODS_VERSION_PATCH_FDFullscreenPopGesture 0
+

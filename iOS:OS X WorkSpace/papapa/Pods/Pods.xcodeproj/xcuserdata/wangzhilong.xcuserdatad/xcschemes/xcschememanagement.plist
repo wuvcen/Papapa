@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FDFullscreenPopGesture.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A65BF727C94D74FF5C9C30E</key>
+		<key>064FB873E85B468AD821D96E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B085E2BE97AE03E3D881BBB1</key>
+		<key>3D424068AAE64DB6F033FD44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97D1EFBE8873E2C2C72504C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

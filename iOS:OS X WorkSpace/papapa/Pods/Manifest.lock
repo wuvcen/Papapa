@@ -1,10 +1,13 @@
 PODS:
   - AVOSCloud (3.1.2.6)
+  - FDFullscreenPopGesture (1.1)
 
 DEPENDENCIES:
   - AVOSCloud
+  - FDFullscreenPopGesture (= 1.1)
 
 SPEC CHECKSUMS:
   AVOSCloud: a2fc903a1aee5a346f0fb839f92617378fffd2ed
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
 
 COCOAPODS: 0.37.2
