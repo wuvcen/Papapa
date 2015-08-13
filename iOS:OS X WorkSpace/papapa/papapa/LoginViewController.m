@@ -9,7 +9,12 @@
 #import "LoginViewController.h"
 #import <UINavigationController+FDFullscreenPopGesture.h>
 @interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *bannerView;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIButton *signUpBtn;
+@property (weak, nonatomic) IBOutlet UIView *tintView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tintHorizonConstraint;
 @end
 
 @implementation LoginViewController

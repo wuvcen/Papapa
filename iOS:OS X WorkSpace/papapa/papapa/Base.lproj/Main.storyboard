@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -154,15 +155,70 @@
                         <viewControllerLayoutGuide type="bottom" id="cDP-mo-pRU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mb7-I8-e8f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="WtQ-Lp-Ffy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="338"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WtQ-Lp-Ffy" secondAttribute="height" multiplier="300:169" id="kmG-3h-SDg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v74-Eq-Zvg">
+                                <rect key="frame" x="0.0" y="338" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ncm-Bk-sai"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-df-5hl">
+                                <rect key="frame" x="300" y="338" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LXe-vf-Mwa"/>
+                                </constraints>
+                                <state key="normal" title="注册">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-R5-GOn" userLabel="tint">
+                                <rect key="frame" x="0.0" y="380" width="300" height="2"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="xHX-3f-nta"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v74-Eq-Zvg" firstAttribute="top" secondItem="WtQ-Lp-Ffy" secondAttribute="bottom" id="6BU-ZR-8h4"/>
+                            <constraint firstItem="v74-Eq-Zvg" firstAttribute="leading" secondItem="mb7-I8-e8f" secondAttribute="leading" id="8Hs-ID-FAS"/>
+                            <constraint firstItem="v74-Eq-Zvg" firstAttribute="width" secondItem="3t6-df-5hl" secondAttribute="width" id="Adb-JO-sFn"/>
+                            <constraint firstItem="WtQ-Lp-Ffy" firstAttribute="top" secondItem="mb7-I8-e8f" secondAttribute="top" id="St6-Rk-Ytc"/>
+                            <constraint firstItem="WtQ-Lp-Ffy" firstAttribute="leading" secondItem="mb7-I8-e8f" secondAttribute="leading" id="XQr-t2-iBU"/>
+                            <constraint firstAttribute="trailing" secondItem="WtQ-Lp-Ffy" secondAttribute="trailing" id="dcB-gi-wCd"/>
+                            <constraint firstItem="KXz-R5-GOn" firstAttribute="leading" secondItem="mb7-I8-e8f" secondAttribute="leading" id="gP0-Kl-UzK"/>
+                            <constraint firstItem="3t6-df-5hl" firstAttribute="leading" secondItem="v74-Eq-Zvg" secondAttribute="trailing" id="geU-NH-DW4"/>
+                            <constraint firstAttribute="trailing" secondItem="3t6-df-5hl" secondAttribute="trailing" id="pMi-J1-Hq4"/>
+                            <constraint firstItem="3t6-df-5hl" firstAttribute="top" secondItem="WtQ-Lp-Ffy" secondAttribute="bottom" id="paW-Dz-TeS"/>
+                            <constraint firstItem="KXz-R5-GOn" firstAttribute="top" secondItem="v74-Eq-Zvg" secondAttribute="bottom" constant="-2" id="x01-db-uGu"/>
+                            <constraint firstItem="KXz-R5-GOn" firstAttribute="width" secondItem="v74-Eq-Zvg" secondAttribute="width" id="yRX-85-ixF"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bannerView" destination="WtQ-Lp-Ffy" id="HJ7-8L-6Nh"/>
+                        <outlet property="loginBtn" destination="v74-Eq-Zvg" id="1WV-he-1iC"/>
+                        <outlet property="signUpBtn" destination="3t6-df-5hl" id="7AV-Da-iq8"/>
+                        <outlet property="tintHorizonConstraint" destination="gP0-Kl-UzK" id="Mkn-1c-Div"/>
+                        <outlet property="tintView" destination="KXz-R5-GOn" id="Zei-g2-4W1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTM-M8-toe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,6 +268,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banner" width="414" height="233"/>
         <image name="forward" width="26" height="44"/>
         <image name="lab" width="46" height="46"/>
         <image name="nouser" width="100" height="100"/>
