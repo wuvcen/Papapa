@@ -7,12 +7,12 @@
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "selection_tint@2x.png"
+      "filename" : "lock_filled@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "selection_tint@3x.png"
+      "filename" : "lock_filled@3x.png"
     }
   ],
   "info" : {
